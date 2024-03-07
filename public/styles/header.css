@@ -1,0 +1,21 @@
+header {
+    padding: 1rem;
+    background-color: var(--header-color);
+    box-shadow: 0 0 2rem gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+#header-nav-btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 1rem;
+    border-right: thin solid gray;
+}
