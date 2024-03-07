@@ -45,6 +45,7 @@ a {
     padding: 1rem;
     font-weight: 100;
     position: relative;
+    transition: filter 0.2s;
 
     &:after {
         content: '';
@@ -61,4 +62,8 @@ a {
     &:hover { &:after {
         transform: scaleX(1);
     } }
+
+    &:active {
+        filter: brightness(0.75);
+    }
 }
