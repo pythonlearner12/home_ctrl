@@ -8,7 +8,8 @@
 </head>
 <body>
     <?php include_once("components/header.php") ?>
-    <main></main>
+    <main>
+    </main>
     <?php include_once("components/footer.php") ?>
 </body>
 </html>
