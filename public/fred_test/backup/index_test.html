@@ -22,18 +22,17 @@
             console.log(`Temperature: ${today.day.avgtemp_c}°C`);
             console.log(`Conditions: ${today.day.condition.text}`);
             console.log(`Wind Speed: ${today.day.maxwind_kph} km/h`);
-            
-            var todayCondition = "Clear Sky"
+            var todayCondition = today.day.condition
             // You can access more details from the 'data' object as needed
-            if (todayCondition == "Partly Cloudy") {
+            if (todayCondition = "Partly Cloudy") {
             var img = document.createElement("img");
-            img.src = "img/few_cloudsd@2x.png"
+            img.src = "few_cloudsd@2x.png"
             document.body.appendChild(img);
             }
 
-            if (todayCondition == "Clear Sky") {
+            if (todayCondition = "Clear sky") {
             var img = document.createElement("img");
-            img.src = "img/clear_skyd@2x.png"
+            img.src = "few_cloudsd@2x.png"
             document.body.appendChild(img);
             }
          })
