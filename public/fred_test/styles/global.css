@@ -67,3 +67,24 @@ a {
         filter: brightness(0.75);
     }
 }
+
+
+
+
+
+.grid
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_grid
+{
+    width: 35rem;
+    height: 35rem;
+    border: #8CB9BD;
+    border-style: groove;
+    margin: 3rem;
+    
+}
