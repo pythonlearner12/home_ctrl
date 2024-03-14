@@ -17,7 +17,6 @@ html {
 body {
     font-size: 1.6rem;
     background-color: var(--background-color);
-    overflow-x: hidden;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -67,4 +66,25 @@ a {
     &:active {
         filter: brightness(0.75);
     }
+}
+
+
+
+
+
+.grid
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_grid
+{
+    width: 35rem;
+    height: 35rem;
+    border: #8CB9BD;
+    border-style: groove;
+    margin: 3rem;
+    
 }
