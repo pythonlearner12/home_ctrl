@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Swap Button</title>
+</head>
+<body>
+    <button id="colorSwapBtn">Click to Swap Color</button>
+    <script src="script.js"></script>
+
+
+    <style>
+        #colorSwapBtn {
+            width: 100px;
+            height: 100px;
+
+            background-color: black;
+            color: yellow;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        document.getElementById('colorSwapBtn').addEventListener('click', function() {
+        var btn = this;
+        if (btn.style.backgroundColor === 'yellow') {
+            btn.style.backgroundColor = 'black';
+            btn.style.color = 'yellow';
+        } else {
+            btn.style.backgroundColor = 'yellow';
+            btn.style.color = 'black';
+        }
+        });
+
+    </script>
+</body>
+</html>
