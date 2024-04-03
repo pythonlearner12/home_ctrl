@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Color Swap Button</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Swap</title>
 </head>
 <body>
-    <button id="colorSwapBtn">Click to Swap Color</button>
-    <script src="script.js"></script>
+  <div class="image-container">
+    <img id="lightbulb" src="lightbulb_off.jpg" alt="First Image" onclick="swapImage()">
+  </div>
 
+  <style>
+    #lightbulb{
+      width: 500px;
+      height: 700px;
+    }
+  </style>
+  
+  <script>
+    let light_on = false;
 
-    <style>
-        #colorSwapBtn {
-            width: 100px;
-            height: 100px;
+    function swapImage() {
+      const imgElement = document.getElementById('lightbulb');
 
-            background-color: black;
-            color: yellow;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
-
-    <script>
-        document.getElementById('colorSwapBtn').addEventListener('click', function() {
-        var btn = this;
-        if (btn.style.backgroundColor === 'yellow') {
-            btn.style.backgroundColor = 'black';
-            btn.style.color = 'yellow';
-        } else {
-            btn.style.backgroundColor = 'yellow';
-            btn.style.color = 'black';
-        }
-        });
-
-    </script>
+      if (light_on == true) {
+        imgElement.src = 'lightbulb_off.jpg';
+        light_on = false;
+      } else {
+        imgElement.src = 'lightbulb_on.jpg';
+        light_on = true;
+      }
+    }
+  </script>
 </body>
 </html>
