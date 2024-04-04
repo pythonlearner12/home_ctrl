@@ -14,23 +14,22 @@
     #lightbulb{
       width: 500px;
       height: 700px;
+      cursor: pointer;
     }
   </style>
-  
-  <script>
-    let light_on = false;
 
-    function swapImage() {
-      const imgElement = document.getElementById('lightbulb');
+<script>
+  function swapImage() {
+    const imgElement = document.getElementById('lightbulb');
 
-      if (light_on == true) {
-        imgElement.src = 'lightbulb_off.jpg';
-        light_on = false;
-      } else {
-        imgElement.src = 'lightbulb_on.jpg';
-        light_on = true;
-      }
+    if (imgElement.src.endsWith('lightbulb_on.jpg')) {
+      imgElement.src = 'lightbulb_off.jpg';
+    } 
+    else {
+      imgElement.src = 'lightbulb_on.jpg';
     }
-  </script>
+  }
+</script>
+
 </body>
 </html>
