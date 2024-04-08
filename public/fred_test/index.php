@@ -35,7 +35,7 @@
 
             <div class="grid">
 
-            <section class="sub_grid">
+                <section class="sub_grid">
                 <script>
                     const apiKey = '7f0f42e3edab492cbe194022240803';
                     const city = 'Amstelveen';
@@ -52,10 +52,8 @@
                         .catch(error => console.error('Error fetching weather data:', error));
                 </script>
                 <p id="temperature"></p>
-            </section>
+                </section>
 
-
-                
                 <section class="sub_grid">
                     hi
                 </section>

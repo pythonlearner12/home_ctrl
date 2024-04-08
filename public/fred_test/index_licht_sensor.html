@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Bar Graph</title>
+<style>
+    canvas {
+        border: 1px solid #000;
+    }
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="300"></canvas>
+
+<script>
+    // Data for the graph
+    const data = [20, 50, 30, 80, 40];
+    
+    // Canvas setup
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    
+    // Drawing the graph
+    function drawGraph() {
+        const barWidth = width / data.length;
+        const maxData = Math.max(...data);
+        
+        // Loop through data array and draw bars
+        for (let i = 0; i < data.length; i++) {
+            const barHeight = (data[i] / maxData) * height;
+            const x = i * (barWidth);
+            const y = height - barHeight;
+            
+            // Draw each bar
+            ctx.fillStyle = 'blue';
+            ctx.fillRect(x, y, barWidth, barHeight);
+        }
+    }
+    
+    // Call the drawGraph function to initially draw the graph
+    drawGraph();
+</script>
+</body>
+</html>

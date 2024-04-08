@@ -9,7 +9,11 @@
   <div class="image-container">
     <img id="lightbulb" src="lightbulb_off.jpg" alt="First Image" onclick="swapImage()">
   </div>
-
+  <div>
+    <p>enter the amount of seconds you want to wait for before light turns on.</p>
+    <input type="text" id="time">
+    <button onclick="setInterval(checkSomething, time.value*1000);"></button>
+  </div>
   <style>
     #lightbulb{
       width: 500px;
@@ -19,8 +23,9 @@
   </style>
 
 <script>
+  
+  const imgElement = document.getElementById('lightbulb');
   function swapImage() {
-    const imgElement = document.getElementById('lightbulb');
 
     if (imgElement.src.endsWith('lightbulb_on.jpg')) {
       imgElement.src = 'lightbulb_off.jpg';
@@ -29,6 +34,13 @@
       imgElement.src = 'lightbulb_on.jpg';
     }
   }
+
+  function checkSomething() {
+      imgElement.src = 'lightbulb_on.jpg';
+  }
+
+
+
 </script>
 
 </body>
