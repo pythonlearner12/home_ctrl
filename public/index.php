@@ -18,7 +18,7 @@
         <section>hi</section>
         <section>hi</section>
         <section>hi</section>
-        <section id="weekly-forcast"></section>
+        <section id="weekly-forecast"></section>
         <section>hi</section>
         <section>hi</section>
     </main>
