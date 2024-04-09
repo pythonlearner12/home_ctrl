@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="weather_icon" src="" alt="">
+    <script>
+        //documentation: "https://www.weatherapi.com/docs/"
+        const apiKey = '7f0f42e3edab492cbe194022240803';
+        const city = 'Amsterdam';
+        const apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=1`;
+
+        const Weather_icon = document.getElementById("weather_icon");
+
+        fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+           const today = data.forecast.forecastday[0];
+           console.log(today.day)
+           let todayCondition = (today.day.condition.text);
+
+           //Weather_icon.src = "img/"+todayCondition+".png";
+        })
+        .catch(error => {
+           console.error('Error fetching weather data:', error);
+
+           Weather_icon.src = "img/error_img.jpg";
+           console.log("dsafkbdjsa");
+        })
+
+
+    </script>
+</body>
+</html>
