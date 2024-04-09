@@ -89,3 +89,39 @@ a {
     margin: 3rem;
     
 }
+
+
+
+
+
+/*first sub grid*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    animation: circleAnimation var(--time-left) linear infinite;
+
+    width: 25rem;
+    height: 25rem;
+    margin-top: 5rem;
+}
+
+@keyframes circleAnimation {
+    from {
+        transform: rotate(var(--rotation-deg));
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*second sub grid*/
+#lightbulb {
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+}
