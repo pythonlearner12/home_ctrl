@@ -22,13 +22,13 @@
            console.log(today.day)
            let todayCondition = (today.day.condition.text);
 
-           Weather_icon.src = "img/"+todayCondition+".png";
+           Weather_icon.src = "static/weather/"+todayCondition+".png";
         })
         .catch(error => {
             
            console.error('Error fetching weather data:', error);
 
-           Weather_icon.src = "img/error_img.jpg";
+           Weather_icon.src = "static/weather/error_img.jpg";
            console.log("dsafkbdjsa");
         })
 
