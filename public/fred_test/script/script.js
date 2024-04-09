@@ -7,26 +7,17 @@ const circleElement = document.querySelector('.circle');
 circleElement.style.setProperty('--rotation-deg', '' + (currentHour * 60 + currentMinute) / 4 + 'deg');
 circleElement.style.setProperty('--time-left', '' + (1440 - (currentHour * 60 + currentMinute)) * 60 + 's');
 
-
-
 /*second sub grid*/
 const imgElement = document.getElementById('lightbulb');
+let isOn = true;
 
 function swapImage() {
-
-    if (imgElement.src.endsWith('lightbulb_on.jpg')) {
-        imgElement.src = 'lightbulb_off.jpg';
-    } else {
-        imgElement.src = 'lightbulb_on.jpg';
-    }
+    imgElement.src = (isOn = !isOn)
+        ? '../static/lightbulb_off.jpg'
+        : '../static/lightbulb_on.jpg';
 }
 
-function checkSomething() {
-    imgElement.src = 'lightbulb_on.jpg';
-}
-
-/*thrid sub grid*/
-
+/*third sub grid*/
 const coursesData = {
     labels: [
         "warmwater",

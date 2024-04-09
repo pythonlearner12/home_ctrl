@@ -32,11 +32,11 @@
                 <section class="sub_grid">
 
                     <div class="image-container">
-                        <img id="lightbulb" src="lightbulb_off.jpg" alt="First Image" onclick="swapImage()">
+                        <img id="lightbulb" src="../static/lightbulb_off.jpg" alt="First Image" onclick="swapImage()">
                     </div>
                     <div>
                         <input type="text" id="time">
-                        <button onclick="setInterval(checkSomething, time.value*1000);"></button>
+                        <button onclick="setTimeout(swapImage, time.value*1000);"></button>
                     </div>
                 </section>
 
