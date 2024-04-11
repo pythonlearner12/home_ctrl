@@ -10,7 +10,10 @@
     <!-- Links -->
     <link rel="stylesheet" href="css/global.css">
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/weekly_forecast.js" defer></script>
+    <script src="js/solar_panel_graph.js" defer></script>
+    <script src="js/thermometer.js" defer></script>
 </head>
 <body>
     <?php include_once("components/header.php") ?>
@@ -19,8 +22,8 @@
         <section>hi</section>
         <section>hi</section>
         <section id="weekly-forecast"></section>
-        <section>hi</section>
-        <section>hi</section>
+        <section><canvas id="solar-panel-graph"></canvas></section>
+        <section><canvas id="thermometer"></canvas></section>
     </main>
     <?php include_once("components/footer.php") ?>
 </body>

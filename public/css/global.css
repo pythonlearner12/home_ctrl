@@ -1,5 +1,6 @@
 /* Imports */
-@import url("./header.css");
+@import url('./header.css');
+@import url('./main.css');
 
 /* Variables */
 :root {
@@ -23,6 +24,9 @@ html {
 body {
     font-size: 1.6rem;
     background-color: var(--background-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
