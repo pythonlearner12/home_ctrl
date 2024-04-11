@@ -1,44 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Bar Height</title>
-</head>
-<body>
-    <input type="number" id="numberInput" min="0" placeholder="Enter a number">
-    <div id="blackBar"></div>
-    <script src="script.js"></script>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overlap Images</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="clock2.png" alt="Image 1" class="image1" />
+      <img src="clock2.png" alt="Image 2" class="image2" />
+    </div>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
+      .container {
+        position: relative;
+      }
 
-        #numberInput {
-            margin-bottom: 20px;
-        }
+      .image1 {
+        /* Can't have position: absolute */
+      }
 
-        #blackBar {
-            width: 100px;
-            background-color: black;
-            transition: height 0.5s ease;
-        }
-
+      .image2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -0px; /* Adjust as needed */
+        margin-left: 0px; /* Adjust as needed */
+      }
     </style>
-
-
-    <script>
-        document.getElementById('numberInput').addEventListener('input', function() {
-        var number = this.value;
-        document.getElementById('blackBar').style.height = number + 'px';
-        });
-    </script>
-</body>
+  </body>
 </html>
-    

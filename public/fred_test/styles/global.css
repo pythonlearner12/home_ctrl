@@ -87,7 +87,6 @@ a {
     border: #8CB9BD;
     border-style: groove;
     margin: 3rem;
-    
 }
 
 
@@ -107,6 +106,10 @@ a {
     height: 25rem;
     margin-top: 5rem;
 }
+#circle_number{
+    position: absolute;
+    width: 36rem;
+}
 
 @keyframes circleAnimation {
     from {
@@ -120,8 +123,20 @@ a {
 
 
 /*second sub grid*/
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
 #lightbulb {
-    width: 250px;
-    height: 350px;
+    /*1.4 * width = height */
+    width: 232px;
+    height: 326px;
     cursor: pointer;
+}
+
+#timer{
+    display: flex;
+    justify-content: center;
 }

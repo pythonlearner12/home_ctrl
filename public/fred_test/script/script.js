@@ -13,8 +13,8 @@ let isOn = true;
 
 function swapImage() {
     imgElement.src = (isOn = !isOn)
-        ? '../static/lightbulb_off.jpg'
-        : '../static/lightbulb_on.jpg';
+        ? '../static/lightbulb_off.png'
+        : '../static/lightbulb_on.png';
 }
 
 /*third sub grid*/

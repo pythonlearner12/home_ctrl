@@ -26,23 +26,25 @@
                 <section class="sub_grid">
                     <div class="container">
                         <img class="circle" src="clock2.png" alt="">
+                        <img id="circle_number" src="../static/clock_numbers.png" alt="">
                     </div>
                 </section>
 
                 <section class="sub_grid">
 
                     <div class="image-container">
-                        <img id="lightbulb" src="../static/lightbulb_off.jpg" alt="First Image" onclick="swapImage()">
+                        <img id="lightbulb" src="../static/lightbulb_off.png" alt="First Image" onclick="swapImage()">
                     </div>
-                    <div>
-                        <input type="text" id="time">
-                        <button onclick="setTimeout(swapImage, time.value*1000);"></button>
+                    <div id="timer">
+                        <input type="number" id="time_input">
+                        <button onclick="setTimeout(swapImage, time_input.value*1000);"></button>
                     </div>
                 </section>
 
                 <section class="sub_grid">
                     <div>
                         <canvas id="coursesDoughnutChart" width="700" height="550"></canvas>
+                        <p>electriciteit kosten in percentage</p>
                     </div>
                 </section>
 
