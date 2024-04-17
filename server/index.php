@@ -1,5 +1,8 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');
+header('Content-Type: application/json');
+
 $data = file_get_contents('data.json');
 $input = file_get_contents('php://input');
 
@@ -12,5 +15,4 @@ if (!empty($input)) {
     file_put_contents('data.json', $data);
 }
 
-header('Content-Type: application/json');
 echo $data;
