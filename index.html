@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home CTRL</title>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern, high quality home control system">
+    <meta name="author" content="HomeCTRL">
+    <!-- Links -->
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/forecast.js" defer></script>
+    <script src="js/solar_panel_graph.js" defer></script>
+    <script src="js/thermometer.js" defer></script>
+    <script src="js/clock.js" defer></script>
+    <script src="js/lights.js" defer></script>
+    <script src="js/energy_chart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <input type="checkbox" id="menu-btn">
+            <div id="menu-nav">
+                <div id="header-nav-btns">
+                    <a class="link-1" href="">Dashboard</a>
+                    <a class="link-1" href="">Settings</a>
+                    <a class="link-1" href="">Account</a>
+                </div>
+                <a class="btn-1" href="">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Clock -->
+        <section>
+            <img id="short-hand" src="static/short_hand.png" alt="short hand">
+            <img id="long-hand" src="static/long_hand.png" alt="long hand">
+            <img id="clock" src="static/normal_clock.png" alt="clock">
+        </section>
+        <!-- Lichten -->
+        <section>
+            <img id="light-bulb" src="static/lightbulb_off.png" alt="Lightbulb" onclick="swapImage()">
+            <div id="timer">
+                <input type="number" id="time_input" placeholder="Delay">
+                <button onclick="delayedToggle()" class="btn-1">Toggle</button>
+            </div>
+        </section>
+        <!-- Energieverbruik -->
+        <section>
+            <canvas id="energie-verbruik"></canvas>
+        </section>
+        <!-- 3 Day Forecast -->
+        <section id="forecast"></section>
+        <!-- Solar Panel Graph -->
+        <section>
+            <canvas id="solar-panel-graph"></canvas>
+        </section>
+        <!-- Thermometer -->
+        <section>
+            <!-- <h2>Binnentemperatuur</h2> -->
+            <div id="thermometer">
+                <div id="fluid">
+                    <div id="temps"></div>
+                </div>
+                <div id="bulb"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
