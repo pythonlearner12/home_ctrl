@@ -32,7 +32,7 @@ fetch('server/')
         const lights = parsed?.lights;
         if (!lights) return;
 
-        lightBulb.src = lights.some(state => state)
+        lightBulb.src = (isOn = lights.some(state => state))
             ? 'static/lightbulb_on.png'
             : 'static/lightbulb_off.png';
     });
