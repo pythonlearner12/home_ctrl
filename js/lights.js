@@ -11,7 +11,8 @@ function toggleLights() {
 
     fetch('server/', {
         method: 'POST',
-        body: `{"lights":[${isOn},${isOn},${isOn}]}`
+        body: `{"lights":[${isOn},${isOn},${isOn}]}`,
+        headers: { 'Content-Type': 'application/json' }
     });
 }
 
