@@ -24,9 +24,11 @@
 
             <div class="grid">
                 <section class="sub_grid">
+
                     <div class="container">
-                        <img class="circle" src="clock2.png" alt="">
-                        <img id="circle_number" src="../static/clock_numbers.png" alt="">
+                        <img id="long_hand" class="hands" src="short_hand.png" alt="" />
+                        <img id="short_hand" class="hands" src="long_hand.png" alt="" />
+                        <img id="clock" src="normal_clock.png" alt="" />
                     </div>
                 </section>
 

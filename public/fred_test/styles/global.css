@@ -97,29 +97,22 @@ a {
 .container {
     display: flex;
     justify-content: center;
-}
+    align-items: center;
+    margin-top: 7rem;
+  }
 
-.circle {
-    animation: circleAnimation var(--time-left) linear infinite;
+  #clock {
+    width: 20rem;
+    height: 20rem;
+  }
 
-    width: 25rem;
-    height: 25rem;
-    margin-top: 5rem;
-}
-#circle_number{
+  .hands {
     position: absolute;
-    width: 36rem;
-}
-
-@keyframes circleAnimation {
-    from {
-        transform: rotate(var(--rotation-deg));
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
+    translate: 0 -50%;
+    transform-origin: bottom;
+    height: 8rem;
+    width: auto;
+  }
 
 
 /*second sub grid*/
@@ -131,8 +124,8 @@ a {
 
 #lightbulb {
     /*1.4 * width = height */
-    width: 232px;
-    height: 326px;
+    width: 23.2rem;
+    height: 32.6rem;
     cursor: pointer;
 }
 

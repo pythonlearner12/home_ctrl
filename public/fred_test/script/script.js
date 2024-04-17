@@ -1,11 +1,21 @@
 /*first sub grid*/
-const currentTime = new Date();
-const currentHour = currentTime.getHours();
-const currentMinute = currentTime.getMinutes();
+function getTimeDecimals(date) {
+    const seconds = date.getSeconds() + date.getMilliseconds() / 1000;
+    const minutes = date.getMinutes() + seconds / 60;
+    const hours = date.getHours() + minutes / 60;
 
-const circleElement = document.querySelector('.circle');
-circleElement.style.setProperty('--rotation-deg', '' + (currentHour * 60 + currentMinute) / 4 + 'deg');
-circleElement.style.setProperty('--time-left', '' + (1440 - (currentHour * 60 + currentMinute)) * 60 + 's');
+    return [hours, minutes, seconds];
+  }
+
+  const short = document.getElementById("short_hand");
+  const long = document.getElementById("long_hand");
+
+  (function update() {
+    const [hours, minutes] = getTimeDecimals(new Date());
+    long.style.rotate = hours * 30 + "deg";
+    short.style.rotate = minutes * 6 + "deg";
+    window.requestAnimationFrame(update);
+  })();
 
 /*second sub grid*/
 const imgElement = document.getElementById('lightbulb');

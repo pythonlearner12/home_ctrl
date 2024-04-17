@@ -34,12 +34,7 @@ a {
     text-decoration: inherit;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem;
-    gap: 2rem;
-}
+
 
 section {
     border: var(--section-border-color);

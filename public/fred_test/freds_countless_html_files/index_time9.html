@@ -34,21 +34,18 @@
       <img id="clock" src="../normal_clock.png" alt="" />
     </div>
     <script>
-      function getTimeDecimals(date) {
-        const seconds = date.getSeconds() + date.getMilliseconds() / 1000;
-        const minutes = date.getMinutes() + seconds / 60;
-        const hours = date.getHours() + minutes / 60;
-
-        return [hours, minutes, seconds];
-      }
-
       const short = document.getElementById("short_hand");
       const long = document.getElementById("long_hand");
+      function clockCalcPos(date) {
+        const minutes = date.getMinutes() + date.getSeconds() / 60;
+        const hours = date.getHours() + minutes / 60;
 
-      (function update() {
-        const [hours, minutes] = getTimeDecimals(new Date());
         long.style.rotate = hours * 30 + "deg";
         short.style.rotate = minutes * 6 + "deg";
+      }
+
+      !(function update() {
+        clockCalcPos(new Date());
         window.requestAnimationFrame(update);
       })();
     </script>
