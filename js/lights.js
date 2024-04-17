@@ -25,3 +25,15 @@ function delayedToggle() {
         isOnDelay = false;
     }, timeInput.value * 1000);
 }
+
+!async function() {
+    const response = await fetch('server/');
+    const parsed = await response.json();
+    
+    if (parsed?.lights) {
+        isOn = parsed.lights.some(state => state);
+        lightBulb.src = isOn
+            ? 'static/lightbulb_on.png'
+            : 'static/lightbulb_off.png';
+    }
+}();
