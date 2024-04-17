@@ -7,7 +7,21 @@ for (let i = -30; i <= 70; i += 10) {
     temps.appendChild(element);
 }
 
-const currentTemperture = 60;
-const percent = 100 - Math.floor(currentTemperture + 30);
+!async function fetchTemperature() {
+    const response = await fetch('server/');
+    const parsed = await response.json();
 
-fluid.style.background = `linear-gradient(white 0%, white ${percent}%, red ${percent}%, red 100%)`
+    const temperature = parsed?.dht11?.temperature;
+    if (!temperature) {
+        setTimeout(fetchTemperature, 1000);
+        return;
+    }
+
+    const percent = 100 - Math.floor(+temperature + 30);
+    fluid.style.background = `linear-gradient(
+        white 0%,
+        white ${percent}%,
+        red ${percent}%,
+        red 100%)
+    `;
+}();

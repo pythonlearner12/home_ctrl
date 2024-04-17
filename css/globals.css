@@ -44,6 +44,7 @@ input[type="number"] {
     font-weight: bold;
     transition: filter 0.2s;
     border: none;
+    cursor: pointer;
 
     &:hover { filter: brightness(0.9); }
     &:active { filter: brightness(0.75); }

@@ -4,10 +4,15 @@ const timeInput = document.getElementById('time_input');
 let isOn = false;
 let isOnDelay = false;
 
-function swapImage() {
+function toggleLights() {
     lightBulb.src = (isOn = !isOn)
         ? 'static/lightbulb_on.png'
         : 'static/lightbulb_off.png';
+
+    fetch('server/', {
+        method: 'POST',
+        body: `{ "lights": [${isOn}, ${isOn}, ${isOn}] }`
+    });
 }
 
 function delayedToggle() {
@@ -16,7 +21,7 @@ function delayedToggle() {
     isOnDelay = true;
 
     setTimeout(() => {
-        swapImage();
+        toggleLights();
         isOnDelay = false;
     }, timeInput.value * 1000);
 }
