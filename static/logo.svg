@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 713.5 140.53">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 110px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        font-size: 138px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #231f20;
+      }
+
+      .cls-5 {
+        fill: #8cb9bd;
+      }
+
+      .cls-5, .cls-4 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="M105,80.79h10v35c0,2.76,2.24,5,5,5h60c2.76,0,5-2.24,5-5v-35h10c1.97,0,3.76-1.16,4.57-2.97.81-1.8.47-3.91-.85-5.38l-45-50c-1.89-2.11-5.54-2.11-7.43,0l-45,50c-1.85,2.05-1.68,5.21.37,7.06.92.83,2.11,1.28,3.34,1.28ZM134.74,79.21c.16.48,4.07,11.58,15.26,11.58s15.21-11.43,15.25-11.55l9.5,3.11c-.25.76-6.24,18.45-24.75,18.45s-24.51-17.69-24.75-18.45l9.49-3.13Z"/>
+  <text class="cls-3" transform="translate(0 120.79)"><tspan x="0" y="0">H</tspan></text>
+  <text class="cls-3" transform="translate(199 122.16)"><tspan x="0" y="0">ME</tspan></text>
+  <rect class="cls-5" x="406.5" y="22.9" width="307" height="99.93" rx="13.52" ry="13.52"/>
+  <text class="cls-2" transform="translate(411.45 113.15)"><tspan x="0" y="0">CTR</tspan><tspan class="cls-1" x="226.07" y="0">L</tspan></text>
+</svg>
