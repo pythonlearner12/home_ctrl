@@ -3,7 +3,7 @@
 $data = file_get_contents('data.json');
 $input = file_get_contents('php://input');
 
-if (strlen($input) > 0) {
+if (!empty($input)) {
     $data = json_decode($data, true);
     foreach (json_decode($input, true) as $key => $value) {
         $data[$key] = $value;
