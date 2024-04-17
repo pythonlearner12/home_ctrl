@@ -1,4 +1,4 @@
-const city = 'Amsterdam', dayCount = 7;
+const city = 'Amsterdam', dayCount = 3;
 const apiKey = '7f0f42e3edab492cbe194022240803';
 const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=${dayCount}&lang=nl&aqi=no&alerts=no`;
 const days = [ 'SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT' ];
