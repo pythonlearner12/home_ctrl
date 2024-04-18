@@ -11,7 +11,6 @@ const chart = new Chart(document.getElementById('solar-panel-graph'), {
         }]
     },
     options: {
-        responsive: true,
         maintainAspectRatio: false
     }
 });
