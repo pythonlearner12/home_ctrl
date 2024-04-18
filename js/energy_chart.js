@@ -24,7 +24,6 @@ new Chart(document.getElementById('energie-verbruik'), {
         }, ],
     },
     options: {
-        responsive: true,
         maintainAspectRatio: false
     }
 });
