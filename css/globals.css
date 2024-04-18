@@ -20,7 +20,8 @@ html {
 body {
     font-size: 1.6rem;
     background-color: var(--background-color);
-    min-height: 100vh;
+    height: fit-content;
+    width: fit-content;
 }
 
 a {

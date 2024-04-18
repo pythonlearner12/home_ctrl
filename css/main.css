@@ -107,14 +107,19 @@ section {
 #clock {
     width: 80%;
     aspect-ratio: 1/1;
+    background: url('../static/normal_clock.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 #short-hand, #long-hand {
-    height: 15%;
+    height: 45%;
     position: absolute;
-    translate: 0 -50%;
+    left: 50%;
+    top: 50%;
+    translate: -50% -100%;
     transform-origin: bottom;
-    width: auto;
 }
 
 /* Light */
