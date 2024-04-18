@@ -19,7 +19,7 @@ const forecastElement = document.getElementById('forecast');
             <div class="forecast-card">
                 <h3 class="forecast-day">${days[new Date(date).getDay()]}</h3>
                 <div class="weather-status">
-                    <img src="${day.condition.icon}" alt="weather icon">
+                    <img src="${day.condition.icon}" alt="weather icons">
                     <span class="weather-status-text">${day.condition.text}</span>
                 </div>
                 <p class="forecast-day-temp">${day.avgtemp_c} &deg;C</p>
