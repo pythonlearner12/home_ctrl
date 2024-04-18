@@ -24,7 +24,7 @@ function formatTime(input) {
 async function getLDRvalue() {
     const response = await fetch('server/');
     const parsed = await response.json();
-    return +parsed?.ldr ?? 0;
+    return parsed?.ldr ?? 0;
 }
 
 async function updateGraph() {

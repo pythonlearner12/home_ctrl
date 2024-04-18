@@ -1,1 +1,1 @@
-{"lights":[false,false,false],"ldr":"800","dht11":{"temperature":"23.50","humidity":"42.00","heatIndex":"23.10"}}
+{"lights":[false,false,false],"ldr":800,"dht11":{"temperature":23.50,"humidity":42.00,"heatIndex":23.10}}
