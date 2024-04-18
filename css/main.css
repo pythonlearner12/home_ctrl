@@ -7,13 +7,12 @@ main {
 }
 
 section {
-    border: var(--section-border-color) groove;
-    border-style: groove;
     padding: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: var(--card-shadow);
 }
 
 /* Forecast */
@@ -79,6 +78,7 @@ section {
     border-bottom: none;
     box-shadow: inset 0 0 0 0.4rem #fff;
     position: relative;
+    background-color: white;
 }
 
 #bulb {
@@ -88,7 +88,7 @@ section {
     border-radius: 50%;
     border: 0.5rem solid #4a1c03;
     box-shadow: inset 0 0 0 0.4rem #fff;
-    translate: 0 -6%;
+    translate: 0 -7%;
 }
 
 #temps {
